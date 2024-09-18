@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemInput = document.getElementById('itemInput');
     const addItemButton = document.getElementById('addItemButton');
     const shoppingList = document.getElementById('shoppingList');
-    const themeToggle = document.getElementById('themeToggle');
 
     const renderItems = async () => {
         const items = await backend.getItems();
@@ -36,10 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             itemInput.value = '';
             renderItems();
         }
-    });
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
     });
 
     renderItems();

@@ -58,7 +58,7 @@ body.dark-theme input[type="text"] {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #007bff; /* Blue color */
     color: #fff;
     border: none;
     padding: 10px;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 body.dark-theme button {
