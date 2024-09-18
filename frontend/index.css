@@ -7,6 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f4f4f9;
 }
 
 .container {
@@ -15,11 +21,20 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    transition: background-color 0.3s;
+}
+
+body.dark-theme .container {
+    background-color: #444;
 }
 
 h1 {
     text-align: center;
     color: #333;
+}
+
+body.dark-theme h1 {
+    color: #f4f4f9;
 }
 
 .input-group {
@@ -33,6 +48,13 @@ input[type="text"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme input[type="text"] {
+    background-color: #555;
+    color: #f4f4f9;
+    border: 1px solid #666;
 }
 
 button {
@@ -43,9 +65,14 @@ button {
     border-radius: 4px;
     cursor: pointer;
     margin-left: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme button {
     background-color: #0056b3;
 }
 
@@ -60,11 +87,20 @@ li {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme li {
+    border-bottom: 1px solid #666;
 }
 
 li.completed span {
     text-decoration: line-through;
     color: #888;
+}
+
+body.dark-theme li.completed span {
+    color: #bbb;
 }
 
 li button {
@@ -76,4 +112,8 @@ li button {
 
 li button:hover {
     color: #333;
+}
+
+body.dark-theme li button:hover {
+    color: #f4f4f9;
 }
